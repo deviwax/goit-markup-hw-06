@@ -934,7 +934,8 @@ img {
 
     .hero-text {
         font-size: 30px;
-        max-width: 90%;
+        max-width: 216px;
+        margin-bottom: 72px;
     }
 
     .button {
@@ -1048,24 +1049,23 @@ img {
 
     .portfolio-section {
         display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 24px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .list-text {
-        width: calc((100% - 24) / 2);
-        flex-basis: 100%;
+        width: calc((100% - 24px) / 2);
     }
 
     .foot-contacts-item {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-between;
         text-align: left;
     }
     
@@ -1074,6 +1074,7 @@ img {
     }
 
     .foot-logo {
+        padding: 0;
         margin-left: 92px;
     }
 
@@ -1083,7 +1084,7 @@ img {
     }
 
     .foot-contacts {
-         margin-left: 0;
+        margin-left: 0;
     }
     
     .foot-input {
@@ -1205,20 +1206,19 @@ img {
 
     .portfolio-section {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        
         gap: 24px;
-        justify-content: space-between;
     }
 
     .list-text {
         box-sizing: border-box;
         margin-left: 24px;
-        width: calc((100% - 48) / 3);
-        
+        width: calc((100% - 48px * 3) / 3);
     }
 
     .foot-logo {
+        padding: 0;
         margin-left: 0;
     }
 
