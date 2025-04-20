@@ -59,7 +59,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 20px;
-    /*76*/
 }
 
 .logo-part {
@@ -70,7 +69,6 @@ img {
     justify-content: space-between;
     flex-direction: column;
     gap: 15px;
-    /*40*/
 }
 
 .nav-link {
@@ -160,7 +158,6 @@ img {
     background-color: #2E2F42;
     max-width: 1440px;
     padding: 100px 0;
-    /*188px 0 188px*/
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office01.jpg);
@@ -172,7 +169,6 @@ img {
 
 .hero-text {
     font-size: 24px;
-    /*56*/
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
@@ -181,10 +177,8 @@ img {
     margin-left: auto;
     align-items: center;
     max-width: 100%;
-    /*496*/
     margin-top: 0;
     margin-bottom: 20px;
-    /*48*/
 }
 
 .button {
@@ -196,12 +190,10 @@ img {
     letter-spacing: 0.04em;
     border-radius: 4px;
     padding: 8px 16px;
-    /*16px 32px*/
     display: block;
     margin: 0 auto;
     border: none;
     min-width: 120px;
-    /*169*/
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -223,12 +215,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    /*24*/
 }
-
-/*.first-text {
-    width: calc((100% - 3 * 24px) / 4);
-}*/
 
 .visually-hidden {
     position: absolute;
@@ -257,7 +244,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
-    /*16*/
     text-align: left;
     max-width: 100%;
     margin: 0 auto;
@@ -267,7 +253,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    /*24*/
     align-items: center;
 }
 
@@ -285,7 +270,6 @@ img {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     width: 100%;
-    /*calc((100% - 72px) / 4)*/
     max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -348,15 +332,6 @@ img {
 
 .container-icon {
     display: none;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    border: 1px solid #8E8F99;
-    width: 264px;
-    height: 112px;*/
 }
 
 .portfolio {
@@ -365,7 +340,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 16px; /*8*/
+    margin-bottom: 16px;
     text-align: center;
 }
 
@@ -383,12 +358,12 @@ img {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    column-gap: 48px; /*24*/
+    column-gap: 48px;
     row-gap: 48px;
 }
 
 .list-text {
-    width: 100%;/*calc((100% - 48px) / 3)*/
+    width: 100%;
     position: relative;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -444,15 +419,10 @@ img {
     align-items: center;
 }
 
-/*.foot-logo-p {
-    margin-left: 102px;
-}*/
-
 .foot-p {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-  /*264*/
 }
 
 .foot-contacts {
@@ -522,7 +492,7 @@ img {
 .foot-input-item {
     display: flex;
     flex-direction: column;
-    gap: 16px; /*24*/
+    gap: 16px;
     width: 100%;
 }
 
@@ -883,10 +853,6 @@ img {
     color: #404bbf;
 }
 
-.menu-current {
-    color: #404BBF;
-}
-
 .menu-address-list {
     transition: color cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 24px;
@@ -902,6 +868,10 @@ img {
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 24px;
+}
+
+.menu-current {
+    color: #404BBF;
 }
 
 .menu-contacts-link :focus {
@@ -933,7 +903,7 @@ img {
     }
 
     .hero-text {
-        font-size: 30px;
+        font-size: 36px;
         max-width: 216px;
         margin-bottom: 72px;
     }
@@ -944,7 +914,6 @@ img {
     }
 
     .portfolio-text {
-        /*flex-direction: row;*/
         flex-wrap: wrap;
     }
 }
@@ -961,7 +930,6 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        /*padding: 0 30px;*/
     }
 
     .logo {
