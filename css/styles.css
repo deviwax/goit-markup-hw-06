@@ -157,7 +157,6 @@ img {
 .hero-bg {
     background-color: #2E2F42;
     max-width: 1440px;
-    padding: 100px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office01.jpg);
@@ -246,7 +245,6 @@ img {
     font-size: 16px;
     text-align: left;
     max-width: 100%;
-    margin: 0 auto;
 }
 
 .team-text {
@@ -431,7 +429,6 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-left: 60px;
     margin-bottom: 16px;
 }
 
@@ -485,7 +482,6 @@ img {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-left: 110px;
     margin-bottom: 16px;
 }
 
@@ -540,7 +536,6 @@ img {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 165px;
-    margin-left: 77px;
 }
 
 .subscribe-btn:hover,
@@ -803,6 +798,7 @@ img {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 100;
 }
 
 .mobile-menu-container {
@@ -839,13 +835,20 @@ img {
     margin-bottom: auto;
 }
 
+.menu-nav-link-list {
+    margin-bottom: 20px;
+}
+
+.menu-nav-link-list:last-child {
+    margin-bottom: 0;
+}
+
 .menu-nav-link {
     font-weight: 700;
     font-size: 36px;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    padding-bottom: 20px;
 }
 
 .menu-nav-link:focus {
@@ -853,9 +856,20 @@ img {
     color: #404bbf;
 }
 
+.menu-address {
+    margin-bottom: 48px;
+}
+
 .menu-address-list {
     transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-contacts-list {
     margin-bottom: 24px;
+}
+
+.menu-contacts-list:last-child {
+    margin-bottom: 0;
 }
 
 .menu-contacts-link {
@@ -867,7 +881,6 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 24px;
 }
 
 .menu-current {
@@ -899,7 +912,9 @@ img {
     }
 
     .hero-bg {
-        padding: 120px 0;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        min-width: 100%;
     }
 
     .hero-text {
@@ -913,8 +928,52 @@ img {
         min-width: 150px;
     }
 
+    .section {
+        padding-top: 96px;
+        padding-bottom: 72px;
+    }
+
+    .section-text {
+        font-weight: 500;
+    }
+
     .portfolio-text {
         flex-wrap: wrap;
+    }
+
+    .foot-logo {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .foot-contacts {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .foot-subscribe {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .subscribe-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal {
+        width: 288px;
+    }
+
+    .form-text {
+        width: 100%;
+    }
+
+    .form-text::placeholder {
+        color: #8E8F99;
+        opacity: 50%;
     }
 }
 
@@ -967,8 +1026,9 @@ img {
     }
 
     .hero-text {
-        font-size: 36px;
-        max-width: 80%;
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 36px;
     }
 
     .button {
@@ -997,10 +1057,11 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 72px;
     }
 
     .first-text {
-        width: calc((100% - 72px) / 2);
+        width: calc((100% - 24px) / 2);
         text-align: left;
     }
 
@@ -1009,6 +1070,7 @@ img {
         flex-wrap: wrap;
         justify-content: center;
         gap: 24px;
+        row-gap: 64px;
     }
 
     .team-section {
@@ -1020,7 +1082,8 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 24px;
+        row-gap: 72px;
+        column-gap: 24px;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -1035,6 +1098,7 @@ img {
         flex-wrap: wrap;
         align-items: flex-start;
         text-align: left;
+        padding: 0 108px;
     }
     
     .foot-logo-p {
@@ -1043,12 +1107,11 @@ img {
 
     .foot-logo {
         padding: 0;
-        margin-left: 92px;
+        margin-right: 120px;
     }
 
     .foot-p {
         width: 264px;
-        margin-left: 92px;
     }
 
     .foot-contacts {
@@ -1062,7 +1125,7 @@ img {
 
     .foot-input-item {
         flex-direction: row;
-        margin-left: 92px;
+        gap: 0;
     }
     
     .foot-email {
@@ -1070,7 +1133,7 @@ img {
     }
 
     .foot-subscribe {
-        margin-left: 92px;
+       text-align: left;
     }
 
     .subscribe-btn {
@@ -1081,6 +1144,9 @@ img {
         display: none;
     }
 
+    .modal {
+        width: 408px;
+    }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
@@ -1099,7 +1165,6 @@ img {
     }
 
     .logo {
-        font-size: 24px;
         margin-right: 76px;
     }
 
@@ -1114,12 +1179,17 @@ img {
         gap: 40px;
     }
 
+    .contacts-link {
+        font-size: 16px;
+    }
+
     .hero-bg {
-        padding: 160px 0;
+        padding-top: 188px;
+        padding-bottom: 292px;
     }
 
     .hero-text {
-        font-size: 40px;
+        font-size: 56px;
         max-width: 496px;
         margin-bottom: 48px;
     }
@@ -1148,8 +1218,7 @@ img {
     }
 
     .section-text {
-        font-weight: 16px;
-        max-width: 264px;
+        font-weight: 400;
     }
 
     .portfolio {
@@ -1176,13 +1245,13 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 48px;
     }
 
     .list-text {
         box-sizing: border-box;
-        margin-left: 24px;
-        width: calc((100% - 48px * 3) / 3);
+        width: calc((100% - 48px) / 3);
     }
 
     .foot-logo {
@@ -1198,6 +1267,7 @@ img {
     .foot-contacts-item {
         flex-wrap: nowrap;
         flex-direction: row;
+        gap: 0;
     }
 
     .foot-contacts {
@@ -1234,13 +1304,12 @@ img {
     }
 
     .subscribe-btn {
-        margin-left: 0;
+        margin-left: 24px;
     }
 
     .mobile-menu {
         display: none;
     }
-
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
